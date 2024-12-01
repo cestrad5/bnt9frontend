@@ -1,0 +1,8 @@
+.card {
+  border: 1px solid transparent #ffffff5b;
+  border-radius: 10px;
+  /* box-shadow: var(--box-shadow); */
+  overflow: hidden;
+  background-color: var(--color-background-card);
+  box-shadow: 0px 0px 30px #895c47;
+}

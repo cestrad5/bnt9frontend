@@ -1,0 +1,151 @@
+.auth .form {
+  width: 35rem;
+  padding: 1.5rem;
+  /* animation: slide-up 0.5s ease; */
+  background-color: var(--color-background-card);
+  box-shadow: 0px 0px 10px #895c47;
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  position: absolute; /* Añade posición absoluta para centrar verticalmente */
+  top: 50%; /* Mueve el formulario hacia el centro vertical */
+  left: 50%; /* Mueve el formulario hacia el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra el formulario tanto vertical como horizontalmente */
+  border-radius: 7px;
+  font-family: 'Raleway', 'Open Sans';
+}
+
+.auth .form h2 {
+  color: #895c47;
+  text-align: center;
+}
+
+.auth .form form input[type="text"],
+.auth .form form input[type="email"],
+.auth .form form input[type="password"] {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  border: 1px solid #895C47;
+  border-bottom: 3px solid #895c47;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  color: #000000;
+}
+
+.auth .form form input[type="text"]:focus,
+.auth .form form input[type="email"]:focus,
+.auth .form form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+
+.auth .form form input[type="text"]:focus:invalid,
+.auth .form form input[type="email"]:focus:invalid,
+.auth .form form input[type="password"]:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.auth .form form .links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth .form form .links a{
+  color: #000000;
+  /* margin: 5px 0; */
+}
+
+.auth .form form p {
+  text-align: center;
+  /* margin: 1rem; */
+}
+
+.auth .form .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 1rem; */
+}
+
+.auth .form .register a {
+  color : #895c47;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.auth .form .register p {
+  color : #000000;
+  padding-top: 20px;
+}
+.a{
+  color: #895c47;
+}
+
+.button{
+  background-color: transparent;
+  border: 1px solid #895c47;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;  
+  transition: background-color 0.3s;
+  color: #895c47;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: #FFF;
+  background-color: #895c47;
+}
+
+.auth .form .validate-password input[type="password"] {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 100%;
+    border: 10px solid #895C47 !important;
+    border-bottom: 3px solid #895c47;
+    border-radius: 3px;
+    outline: none;
+    background-color: transparent;
+    color: #000000
+}
+
+.auth .form form select {
+  display:block;
+  font-size:1.6rem;
+  font-weight:300;
+  padding:1rem;
+  margin:1rem auto;
+  width: 100%;
+  border:1px solid #895c47;
+  border-radius:3px;
+  outline:none;
+  background-color:transparent;
+  color:#000
+}
+
+.auth .form form select option {
+
+  font-size: 12px;
+
+}
+
+@media screen and (max-width: 575px) {
+  .register p {
+    font-size: 15px;
+
+  }
+
+  .auth .form form select {
+    display: inline-block;
+    }
+}

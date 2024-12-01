@@ -1,0 +1,262 @@
+.product-detail-sales{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSales{
+  width:25%;
+  background-color: var(--color-background-card);
+  box-shadow: 0px 0px 30px #895c47;
+  margin: 30px;
+  text-align: center;
+  border: 1px solid #895c47;
+  border-radius: 5px;
+}
+
+.cardSales img {
+  width: auto;
+  height: 250px;
+}
+
+.product_Name {
+  color: #895c47;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.product_ref {
+  color: #895c47;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.product_price {
+  color: #895c47;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px 0;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.input-quantity {
+  border: 2px solid #895c47;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s;
+  margin-bottom: 5px;
+  width: 95%;
+}
+
+.cardSales .btn-add-to-order {
+  background-color: #895c47;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: 1px solid #895c47;
+  border-radius: 5px; /* Redondea la esquina inferior del botón */
+  font-size: 16px;
+  font-weight: bold;
+  width: 95%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.btn-add-to-order:hover {
+  background-color: transparent;
+  color: #895c47;
+}
+
+.confirmation-notification{
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-notification .accept-button {
+  background-color: #ff8000; /* Fondo naranja */
+  color: #fff; /* Texto blanco */
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px 0;
+  width: 50%;
+}
+.confirmation-notification .accept-button:hover{
+  cursor: pointer;
+}
+
+
+.confirmation-notification .cancel-button {
+  background-color: #0000007c; /* Fondo naranja */
+  color: #ffffff; /* Texto blanco */
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.confirmation-notification .cancel-button{
+  cursor: pointer;
+}
+
+/* Style FROM SALESORDER */
+
+.cardSalesOrder{
+  width: 100%;
+  background-color: var(--color-background-card);
+  box-shadow: 0px 0px 30px #895c47;
+  margin: 20px; 
+  text-align: center;
+  border: 1px solid #895c47;
+  border-radius: 5px;
+}
+
+.containerOrder{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerOrder .imageOrder img{
+  width: 100px;
+  margin: 0 40px;
+}
+
+.containerOrder .orderFields p{
+  text-align: left;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.containerOrder .inputOrder input{
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0; /* Espaciado entre los elementos */
+  text-align: center;
+}
+
+.buttonOrder {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttonOrder:hover{
+  transition: 1s;
+  color: #ff0000;
+}
+
+.btn-add-to-success {
+  background-color: #00ff40c5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 0 5px 5px; /* Redondea la esquina inferior del botón */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 96.3%; /* El botón ocupa todo el ancho del contenedor */
+  margin: 10px 20px;
+}
+
+.btn-add-to-success:hover {
+  background-color: #00ff40ab;
+}
+
+/* Estilo del contenedor del total */
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  /* Establece el ancho en aproximadamente el 30% */
+  width: 30%;
+  margin-left: auto; /* Mueve el contenedor hacia la derecha */
+}
+
+/* Estilo de la etiqueta "Total" */
+.total-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo del monto total */
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722; /* Puedes cambiar el color según tus preferencias */
+}
+
+/* En tu archivo CSS (o SCSS) */
+.btn-remove-all {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-remove-all:hover {
+  background-color: #ff3333;
+  transform: scale(1.02);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remove-all:focus {
+  outline: none;
+  /* Agrega estilos de enfoque si lo deseas */
+}
+
+
+/* MEDIA SCREEN */
+
+@media (max-width: 480px) {
+  .cardSales {
+    width: 90%;
+    margin: 10px;
+  }
+  .cardSales img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .containerOrder{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .cardSales {
+    padding: 2rem 0;
+  }
+  p {
+    font-size: 40px;
+  }
+}

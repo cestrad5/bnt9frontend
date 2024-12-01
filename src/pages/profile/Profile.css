@@ -1,0 +1,76 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  
+}
+
+.profile .card {
+  /* max-width: 700px; */
+  padding: 1rem 0;
+}
+
+/* .profile .card span.profile-photo {
+  text-align: center;
+} */
+
+/* .profile .card img {
+  width: 100%;
+  max-width: 350px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+} */
+
+.profile .card span.profile-data {
+  margin: 0 1rem;
+}
+
+.profile .card span.profile-data > * {
+  /* border-top: 1px solid #ccc; */
+  padding: 5px 0;
+  color: #000000;
+  font-size: 20px;
+}
+
+.btnProfile{
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 4px;  
+  transition: background-color 0.3s;
+  color: #895C47;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnProfile:hover{
+  background-color: #895c47;
+  color: #FFFFFF;
+}
+
+.emailDisabled{
+  color: #895c47 !important;
+}
+
+@media screen and (max-width: 575px) {
+  .profile .card {
+    width: 100%;
+  }
+  .profile .card span.profile-data,
+  .profile .card span.profile-data > * {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile .card {
+    width: 700px;
+  }
+}

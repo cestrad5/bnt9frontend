@@ -1,0 +1,351 @@
+.datapedido{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.575);
+    border: 1px solid #895c47cb;
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+
+p{
+    text-align: justify;
+}
+
+
+.info{
+    border: 1px solid #895c47;
+    width: 100%;
+    box-shadow: #895c473d 0px 2px 5px -1px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border: none;
+     
+     
+}
+
+
+.datapedido h3{
+    text-align: left;
+    color: #895c47;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+ 
+.h3ordePdfList{
+    text-align: center;
+    color: #895c47;
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.datapedido-product{
+    display: flex;
+    padding: 8px;
+     
+    border: none;
+    border-radius: 4px;
+    
+}
+
+
+
+.datapedido-pedido{
+     
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+     
+}
+
+.headerPedido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.623);
+}
+
+
+
+.datapedido-p{
+    color: #895c47;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 3px;   
+
+}
+
+.datapedido-p-cliente{
+    color: #895c47;
+    font-size: 25px;
+    padding: 3px;
+}
+
+.datapedido-p-name-cliente{
+    
+    font-size: 25px;
+    padding: 3px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.datapedido-p-name-note{
+    font-size: 16px;
+    
+    
+}
+
+.datapedido-p-name-total{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.datapedido-p-name{
+     
+    
+    font-size: 20px;
+     
+    margin-left: 5px;
+}
+
+.datapedido-p-name-num{
+    color: #895c47;
+    font-size: 30px;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.datapedido-img{
+    margin-top:-20px;
+    width: 160px;
+    
+     
+}
+
+
+.sesionb{
+    display: flex;
+    flex-direction: column;
+}
+
+.alta{
+     display: flex;
+    justify-content: center;
+}
+
+.infoCliente{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 5px;
+}
+
+
+
+         
+ 
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+.div-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+.checkbox{
+
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color:none;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    width: 34px;
+    height: 34px;
+    appearance: none;
+    border: 2px solid #8888885f;
+    border-radius: 20px;
+    background-position: 0 -2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox:checked {
+    background-color: rgb(75, 156, 13);
+  color: rgb(75, 156, 13);
+  background-position: 0 0;
+  border: 2px solid #f8a304;
+  }
+
+  
+ 
+
+
+  .wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.fechaBoton{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.datapedido-p-finalizado{
+    background-image: linear-gradient(to right, #895c47 0%, #895c479d  51%, #e2cbc0  100%);
+    margin: 2px;
+    padding: 10px 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid beige;
+    border-radius: 10px;
+    display: block;
+    width:150px;
+    height:50px; 
+}
+
+@media (max-width: 600px) {
+    .datapedido {
+     width: 100%;
+     padding: 0;
+    }
+    .datapedido-product{
+        flex-direction: column;
+    }
+    .headerPedido{
+        flex-direction: column;   
+    }
+    .datapedido-p-name-cliente{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .fechaBoton{
+        align-items: center;
+    }
+    .datapedido-p-finalizado{
+        margin: 2px;
+        padding: 5px 8px;
+        font-size: 10px;
+        font-weight: 600;
+        transition: 0.5s;
+        width:130px;
+        height:40px; 
+    }
+    .datapedido-p-cliente{
+        
+        font-size: 20px;
+        
+    }
+  }
+.datapedido-p-finalizado span{
+    position: absolute;
+    display: block;
+}
+.datapedido-p-finalizado span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+.datapedido-p-finalizado span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+.datapedido-p-finalizado span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+.datapedido-p-finalizado span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+.datapedido-p-finalizado:hover{
+    transition: all .5s;
+    /* transform: rotate(-3deg) scale(1.1); */
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+    color: white;
+}
+.datapedido-p-finalizado:hover span{
+    animation-play-state: paused;
+}
+
+
+
